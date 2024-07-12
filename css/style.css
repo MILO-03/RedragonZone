@@ -116,9 +116,11 @@ section
     font-size: 1.7rem;
     margin: 0 1rem;
     color: #eee;
+    transition: .3s;
 }
 
-.header .navbar a:hover
+.header .navbar a:hover,
+.header .navbar a.active
 {
     color: #FF0000;
 }
@@ -522,18 +524,44 @@ section
     padding: 1rem 0;
 }
 
-/*BG*/
-.background2
+.about
 {
     border: 0px solid;
     display: flex;
     justify-content: center;
-    background: url(../image/about-image2.png) no-repeat;
+    background: url(../image/banner3-img.png) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
     padding-bottom: 17rem;
 }
+
+.about .content
+{
+    border: 0px solid;
+    text-align: center;
+    width: 60rem;
+}
+
+.about .content h3
+{
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.about .content h3 span
+{
+    color: red;
+}
+
+.about .content p
+{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem;
+    line-height: 1.8;
+}
+
 
 .footer
 {
